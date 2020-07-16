@@ -6,11 +6,9 @@
 /*   By: momotaun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/15 16:52:45 by momotaun          #+#    #+#             */
-/*   Updated: 2020/07/15 17:05:18 by momotaun         ###   ########.fr       */
+/*   Updated: 2020/07/16 12:59:37 by momotaun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int    ft_iterative_factorial(int nb)
 {
@@ -18,13 +16,13 @@ int    ft_iterative_factorial(int nb)
     {
         int     ans;
         ans = 1;
-        if(nb == 1)
+        if (nb == 1 || nb == 0)
         {
             return 1;
         }
         else
         {
-            while(nb >= 1)
+            while (nb >= 1)
             {
                 ans = ans * nb;
                 nb--;
